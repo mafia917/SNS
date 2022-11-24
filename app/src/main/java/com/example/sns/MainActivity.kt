@@ -4,37 +4,50 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.Handler
+import android.view.ContextMenu
 import android.view.MenuItem
+import android.view.View
 import android.widget.Toast
 import androidx.appcompat.app.AlertDialog
-
+import androidx.fragment.app.commit
+import androidx.fragment.app.replace
+import com.example.pblsns.Auth.LoginActivity
+import com.example.sns.Data.LoadingDialog
+import com.example.sns.Fragments.BoardFragment
+import com.example.sns.Fragments.HomeFragment
+import com.example.sns.Fragments.SearchFragment
+import com.example.sns.Fragments.InfoFragment
 import com.example.sns.databinding.ActivityLoginBinding
+
 import com.example.sns.databinding.ActivityMainBinding
 import com.google.firebase.auth.FirebaseAuth
+
 
 class MainActivity : AppCompatActivity() {
 
 
-    private lateinit var binding: ActivityLoginBinding
+    private lateinit var binding: ActivityLoginBinding // 임시
+    //private lateinit var binding: ActivityMainBinding
     private lateinit var auth: FirebaseAuth
 
     override fun onCreate(savedInstanceState: Bundle?) {
         binding = ActivityLoginBinding.inflate(layoutInflater)
+        //binding = ActivityMainBinding.inflate(layoutInflater)
         super.onCreate(savedInstanceState)
         setContentView(binding.root)
 
 
-        /*
-        replacement(1)
 
-        //#########Fragment 화면전환
-        binding.btBoard.setOnClickListener { replacement(1) }
-        binding.btHome.setOnClickListener { replacement(2) }
-        binding.btTodo.setOnClickListener { replacement(3) }
-        binding.btTip.setOnClickListener { replacement(4) }
+//        replacement(2)
+//
+//        //#########Fragment 화면전환
+//        binding.btbtBoard.setOnClickListener { replacement(1) }
+//        binding.btHome.setOnClickListener { replacement(2) }
+//        binding.btTodo.setOnClickListener { replacement(3) }
+//        binding.btTip.setOnClickListener { replacement(4) }
 
 
-         */
+
 
     }
 
@@ -50,7 +63,7 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
-    /*
+
     //프레그먼트 전환
     fun replacement(number: Int) {
         supportFragmentManager.commit {
@@ -58,10 +71,11 @@ class MainActivity : AppCompatActivity() {
             when (number) {
                 1 -> replace<BoardFragment>(R.id.main_my_fragment)
                 2 -> replace<HomeFragment>(R.id.main_my_fragment)
-                3 -> replace<TodoFragment>(R.id.main_my_fragment)
-                4 -> replace<TipFragment>(R.id.main_my_fragment)
+                3 -> replace<InfoFragment>(R.id.main_my_fragment)
+                4 -> replace<SearchFragment>(R.id.main_my_fragment)
                 else -> return@commit
             }
+
             if(number == 2){
                 val loading = LoadingDialog(this@MainActivity)
                 loading.startLoading()
@@ -72,11 +86,21 @@ class MainActivity : AppCompatActivity() {
                     }
                 },2000)
             }
+
+
             addToBackStack(null)
         }
 
     }
 
+    override fun onCreateContextMenu(
+        menu: ContextMenu?,
+        v: View?,
+        menuInfo: ContextMenu.ContextMenuInfo?
+    ) {
+        super.onCreateContextMenu(menu, v, menuInfo)
+        menuInflater.inflate(R.menu.main_option, menu)
+    }
 
 
     override fun onContextItemSelected(item: MenuItem): Boolean {
@@ -103,7 +127,7 @@ class MainActivity : AppCompatActivity() {
         }
         return super.onContextItemSelected(item)
     }
-    */
+
 
 
 

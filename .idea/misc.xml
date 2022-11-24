@@ -4,10 +4,18 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/GW/Desktop/com4-2/SNS/app/src/main/res/drawable/board_button_radius.xml" value="0.2445" />
+        <entry key="..\:/Users/GW/Desktop/com4-2/SNS/app/src/main/res/drawable/ic_launcher_foreground.xml" value="0.2895" />
         <entry key="..\:/Users/GW/Desktop/com4-2/SNS/app/src/main/res/layout/activity_enrollment.xml" value="0.5049818840579711" />
         <entry key="..\:/Users/GW/Desktop/com4-2/SNS/app/src/main/res/layout/activity_login.xml" value="0.28020833333333334" />
         <entry key="..\:/Users/GW/Desktop/com4-2/SNS/app/src/main/res/layout/activity_main.xml" value="0.33" />
         <entry key="..\:/Users/GW/Desktop/com4-2/SNS/app/src/main/res/layout/activity_splash.xml" value="0.5208333333333334" />
+        <entry key="..\:/Users/GW/Desktop/com4-2/SNS/app/src/main/res/layout/activity_user_info.xml" value="0.5208333333333334" />
+        <entry key="..\:/Users/GW/Desktop/com4-2/SNS/app/src/main/res/layout/dialog_loading.xml" value="0.5208333333333334" />
+        <entry key="..\:/Users/GW/Desktop/com4-2/SNS/app/src/main/res/layout/fragment_board.xml" value="0.5208333333333334" />
+        <entry key="..\:/Users/GW/Desktop/com4-2/SNS/app/src/main/res/layout/fragment_home.xml" value="0.5208333333333334" />
+        <entry key="..\:/Users/GW/Desktop/com4-2/SNS/app/src/main/res/layout/fragment_tip.xml" value="0.5208333333333334" />
+        <entry key="..\:/Users/GW/Desktop/com4-2/SNS/app/src/main/res/layout/fragment_todo.xml" value="0.5208333333333334" />
+        <entry key="..\:/Users/GW/Desktop/com4-2/SNS/app/src/main/res/menu/main_option.xml" value="0.5208333333333334" />
       </map>
     </option>
   </component>

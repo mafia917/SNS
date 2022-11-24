@@ -76,7 +76,7 @@ class EnrollmentActivity : AppCompatActivity() {
         binding.btNicknameCheckCancel.setOnClickListener {
             binding.btNicknameCheck.text = "중복확인"
             binding.btNicknameCheck.backgroundTintList = ColorStateList.valueOf(
-                ContextCompat.getColor(this, R.color.my_main_color))
+                ContextCompat.getColor(this, R.color.black))
             binding.etEnrollemntNickname.setText("")
             binding.etEnrollemntNickname.isEnabled = true
 

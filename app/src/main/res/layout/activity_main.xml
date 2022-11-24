@@ -63,7 +63,7 @@
             android:src="@drawable/home"
 
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toStartOf="@+id/bt_todo"
+            app:layout_constraintEnd_toStartOf="@+id/bt_myinfo"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.0" />
 
@@ -78,19 +78,20 @@
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.0" />
 
+
         <ImageView
-            android:id="@+id/bt_todo"
+            android:id="@+id/bt_myinfo"
             android:layout_width="100dp"
             android:layout_height="50dp"
 
             android:src="@drawable/person"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toStartOf="@+id/bt_tip"
+            app:layout_constraintEnd_toStartOf="@+id/bt_search"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="1.0" />
 
         <ImageView
-            android:id="@+id/bt_tip"
+            android:id="@+id/bt_search"
             android:layout_width="100dp"
             android:layout_height="50dp"
             android:src="@drawable/doorbell"
@@ -98,6 +99,10 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
+
+
+
+
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>
